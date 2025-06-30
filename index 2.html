@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>アンケート</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=LINE+Seed+JP&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #39FF14; /* 蛍光緑 */
+      font-family: 'LINE Seed JP', sans-serif;
+      color: black;
+      padding: 40px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2em;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    input[type="text"], textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #000;
+      font-size: 1em;
+      background-color: #eaffea;
+      color: black;
+    }
+
+    input[type="submit"] {
+      margin-top: 30px;
+      background-color: black;
+      color: #39FF14;
+      padding: 10px 20px;
+      border: none;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #222;
+    }
+  </style>
+</head>
+<body>
+  <h1>アンケート🐳☁️</h1>
+  <form action="https://script.google.com/macros/s/AKfycbszVqreAypKxLpKjbdZUpdnO06YuxL9Ecay4oPEZQaANN50niEZ16L1zgAMWYlTCoV/exec" method="post">
+    <label for="favorite">小学生の時好きだった教科は？</label>
+    <select id="favorite" name="favorite">
+      <option value="国語">国語</option>
+      <option value="算数">算数</option>
+      <option value="理科">理科</option>
+      <option value="社会">社会</option>
+      <option value="英語">英語</option>
+      <option value="道徳">道徳</option>
+    </select>
+
+    <label for="why-favorite">その教科のどんなところが好きでしたか？</label>
+    <textarea id="why-favorite" name="why_favorite" rows="3"></textarea>
+
+    <label for="weak">苦手だった教科は？（複数🙆‍♀️）</label>
+    <input type="text" id="weak" name="weak">
+
+    <label for="kokugo-life">大人になって「こんなところで国語が生きた！」と感じた経験はありますか？</label>
+    <textarea id="kokugo-life" name="kokugo_life" rows="4"></textarea>
+
+    <label for="readability">国語の教科書📘について、読みにくいなぁ、と思いますか？</label>
+    <textarea id="readability" name="readability" rows="3"></textarea>
+
+    <label for="fav-story">好きだった国語のお話は？</label>
+    <input type="text" id="fav-story" name="fav_story">
+
+    <label for="non-kokugo-reading">国語以外で好きだった読み物（小説、絵本、詩など）は？タイトルは？</label>
+    <input type="text" id="non-kokugo-reading" name="non_kokugo_reading">
+
+    <input type="submit" value="送信">
+  </form>
+</body>
+</html>
